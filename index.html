@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+  <nav class="bg-black shadow-md">
+    <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+<img class="w-40 h-16" src="images/cali logo-02.png" alt="">       
+ </div>
+        <!-- Menu (Desktop) -->
+        <div class="hidden md:flex text-xl text-white  gap-10">
+          <a href="#" class=" hover:text-blue-500">Home</a>
+          <a href="#" class=" hover:text-blue-500">About</a>
+          <a href="#" class=" hover:text-blue-500">Services</a>
+          <a href="#" class=" hover:text-blue-500">Contact</a>
+        </div>
+        <button class=" md:bg-[#0071BC] px-6 rounded-xl py-3 text-white text-xl">WhatsApp</button>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6 text-[#0071BC]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden text-white md:hidden">
+      <a href="#" class="block px-4 py-2  hover:bg-gray-200">Home</a>
+      <a href="#" class="block px-4 py-2  hover:bg-gray-200">About</a>
+      <a href="#" class="block px-4 py-2  hover:bg-gray-200">Services</a>
+      <a href="#" class="block px-4 py-2  hover:bg-gray-200">Projects</a>
+      <a href="#" class="block px-4 py-2  hover:bg-gray-200">Contact Us</a>
+    </div>
+  </nav>
+  <!-------------------- End Header------------------->
+
+
+<section>
+    <div class=" bg-black  flex justify-between h-screen w-screen">
+        <div class="content text-white ">
+            <h1>Hello, i am</h1>
+            <h1>CALI BASHIIR </h1>
+            <h1>FULLSTACK DEVELOPER</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum architecto omnis vel, veritatis, autem distinctio cupiditate corporis repellat
+                 exercitationem quos similique placeat quisquam dolorum, ut nihil molestias? Repudiandae, sit.</p>
+            <div class="flex gap-5">
+            <button class=" bg-[#0071BC] text-white px-6 py-3 text-xl rounded-xl">Githup Profile</button>
+            <button class=" bg-[#0071BC] text-white px-6 py-3 text-xl rounded-xl">Download Cv</button>
+        </div>
+        </div>
+        <img class="w-98 h-100" src="images/heroimg.png" alt="">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // JavaScript to toggle the mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
